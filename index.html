@@ -9,35 +9,32 @@
         <style>
 body {
     position: relative;
-    background-color: #bdc6ce;
+    background-color:#fff;
     font-family: Georgia, 'Times New Roman', Times, serif,Arial;
+    margin: 0;
 }
 /*Nav Bar*/
 .topnav {
   overflow: hidden;
-  background-color: #333;
-    position: sticky;
-    top: 0;
+  background: linear-gradient(120deg, #7f70f5, #0ea0ff);
+  position: sticky;
+  top: 0px;
+  height: 5vw;
 }
 
 .topnav a {
   float: left;
   display: block;
-  color: #f2f2f2;
+  color: #f2f5f5;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 1.1vw;
 }
 
 .topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-.topnav a.active {
-  background-color: #4CAF50;
-  color: white;
+  background-color: #8739f9;
+  color: #363636;
 }
 
 .topnav .icon {
@@ -65,6 +62,10 @@ body {
     text-align: left;
   }
 }
+#firstPage{
+  padding-top:0.5vw;
+  padding-bottom:0.5vw;
+}
 /*image*/
 
 #circle
@@ -73,13 +74,13 @@ body {
    margin-left: auto;
    margin-right: auto;
    margin-top: 7vw;
-   border-radius:50% 50% 50% 50%;  
+   border-radius:50% 50% 50% 50%;
    width:18vw;
    height:18vw;
 }
 /*About*/
 #secondPage{
-  background:#9099a1;
+  background:#c6dcec;
   padding-top:0.5vw;
   padding-bottom:0.5vw;
   }
@@ -88,21 +89,21 @@ body {
   padding-bottom: 5.09vw;
   margin-left:15vw;
   margin-right:15vw;
-  background:#bdc6ce;
-  
 }
 /*Educational Qualifications*/
 #thirdPage{
-  background:#6a737a;
-  padding-top:1vw;
+  background-image: url("pexels-pixabay-207691.jpg");
+  background-size: cover;
+  padding-top:0.1vw;
   padding-bottom:7vw;
+  margin-top: 0.5vw;
+  margin-bottom: 0.5vw;
   }
 #edu{
   text-align: center;
   padding-bottom: 4vw;
   margin-left:5vw;
   margin-right:5vw;
-  background:#bdc6ce;
 }
 .center {
   margin-left: auto;
@@ -118,6 +119,7 @@ body {
    height: 12vw;
 }
 table {
+  background-color: #f0f0f0;
   border-collapse: separate;
   border-spacing: 0;
   width: 40vw;
@@ -130,20 +132,20 @@ th,td {
   padding: 0.6vw;
 }
 
-tr:nth-child(even){background-color: #f2f2f2}
 
 /*skills*/
 #fourthPage{
-  background:#9099a1;
+  background-image: url("pexels-ono-kosuki-5973975.jpg");
+  background-size: cover;
   padding-top:0.5vw;
-  padding-bottom:0.5vw;
+  padding-bottom:2vw;
+  margin-bottom: 0.5vw;
   }
   #skills{
   text-align: center;
   padding-bottom: 5.09vw;
   margin-left:5vw;
   margin-right:5vw;
-  background:#bdc6ce;
 }
 #iskill
  {
@@ -167,20 +169,21 @@ th,td {
   padding: 0.6vw;
 }
 .checked {
-  color: blue;
+  color: #0ea5ff;
 }
 /*projects*/
 #fifthPage{
-  background:#6a737a;
-  padding-top:0.1vw;
-  padding-bottom:0.7vw;
+  background-image: url("pexels-pixabay-372787.jpg");
+  background-size: cover;
+  padding-top:0.5vw;
+  padding-bottom:1.5vw;
+  margin-bottom: 0.5vw;
   }
   #projects{
   text-align: center;
   padding-bottom: 5.09vw;
   margin-left:5vw;
   margin-right:5vw;
-  background:#bdc6ce;
 }
   .column {
   float: left;
@@ -204,7 +207,8 @@ th,td {
 }
 /*Contact Me*/
 #sixthPage{
-  background:#9099a1;
+  background-image: url("pexels-negative-space-33999.jpg");
+  background-size: cover;
   padding-top:0.5vw;
   padding-bottom:0.5vw;
   }
@@ -213,7 +217,6 @@ th,td {
   padding-bottom: 5.09vw;
   margin-left:5vw;
   margin-right:5vw;
-  background:#bdc6ce;
 }
 /*form*/
 input[type=text], select, textarea {
@@ -230,7 +233,7 @@ label {
 }
 
 input[type=submit] {
-  background-color: #4CAF50;
+  background-color: #0ea0ff;
   color: white;
   padding: 12px 20px;
   border: none;
@@ -240,12 +243,12 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-  background-color: #45a049;
+  background-color: #7f70f5;
 }
 
 .container {
   border-radius: 5px;
-  background-color: #bdc6ce;
+  
   padding: 20px;
 }
 
@@ -277,8 +280,9 @@ input[type=submit]:hover {
 }
 /*bottom bar*/
 footer{
-  background-color:#333a3f;
+  background-color:#0ea5ff;
   color:rgb(248, 245, 245);
+
   
 }
 </style>
@@ -290,18 +294,20 @@ footer{
         <a href="#skills">Skills</a>
         <a href="#projects">Projects</a>
         <a href="#contact"><i class="fa fa-fw fa-envelope"></i>Contact Me</a>
-          <a href="#"><i class="fa fa-fw fa-download"></i>Download</a>
+        <a href="#
+         "><i class="fa fa-fw fa-download"></i>Download</a>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
           <i class="fa fa-bars"></i>
         </a>
       </div>
-      
-      <img src="Daco_1888496.png" id="circle" /> 
+      <div id="firstPage">
+      <img src="images/Daco_1888496.png" id="circle" /> 
       <p style="font-size: 4vw;" align="center">Tejas Ambhore</p>
       <div style="text-align: center;">
-      <a href="https://www.facebook.com/tejas.ambhore.77/"><h2 class="center"><i class="fa fa-facebook" ></i> Facebook</h2></a>
-      <a href="https://www.linkedin.com/in/tejas-ambhore-3634ba206/"><h2 class="center"><i class="fa fa-linkedin" ></i> Likedin</h2></a>
-      <a href="https://www.github.com/tejasambhore"><h2 class="center"><i class="fa fa-github" ></i> Github</h2></a></div>
+      <a href="https://www.facebook.com/tejas.ambhore.77/" style="color: black;"><h2 class="center"><i class="fa fa-facebook" ></i> Facebook</h2></a>
+      <a href="https://www.linkedin.com/in/tejas-ambhore-3634ba206/" style="color: black;"><h2 class="center"><i class="fa fa-linkedin" ></i> Likedin</h2></a>
+      <a href="https://www.github.com/tejasambhore"><h2 class="center" style="color: black;"><i class="fa fa-github" ></i> Github</h2></a></div>
+      </div>
       <div id="secondPage">
         <div id="about">
             <h1 > About</h1>
@@ -315,7 +321,7 @@ footer{
       <div id="thirdpage">
         <div id="edu">
           
-            <img src="Daco_4261611.png" id="iedu"/> 
+            <img src="images/Daco_4261611.png" id="iedu"/> 
             <h1>Educational Qualifications</h1>
             <h3>Schooling</h3>
             <table class="center">
@@ -355,13 +361,20 @@ footer{
 
         <div id="fourthPage">
           <div id="skills">
-            <img src="Daco_2089021.png" id="iskill"/>
+            <img src="images/Daco_2089021.png" id="iskill"/>
             <h1>SKILLS</h1>
-              <h3>Programming Skills</h3>
             <table class="center">
               <tr>
               <th>Skills</th>
               <th>Rating</th>
+              </tr>
+              <tr>
+                <td>Adobe Photoshop</td>
+                <td><span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span></td>
               </tr>
               <tr>
                 <td>C language</td>
@@ -397,29 +410,6 @@ footer{
               </tr>
               
             </table>
-              <h3>Software Skills</h3>
-              <table class="center">
-                  <th>Skills</th>
-              <th>Rating</th>
-              </tr>
-              <tr>
-                <td>Adobe Photoshop</td>
-                <td><span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star"></span>
-                  <span class="fa fa-star"></span></td>
-              </tr>
-              <tr>
-                <td>Adobe Illustrator</td>
-                <td><span class="fa fa-star checked"></span>
-                  <span class="fa fa-star"></span>
-                  <span class="fa fa-star"></span>
-                  <span class="fa fa-star"></span>
-                  <span class="fa fa-star"></span></td>
-              </tr>
-              </table>
-              
             </div>
             </div>
 
@@ -427,15 +417,15 @@ footer{
               <div id="projects">
                 <h1>Projects</h1>
               <div class="row">
-                <div class="column" style="background-color:#bdc6ce;">
+                <div class="column" style="background-color:#fff;">
                   <h2><a href="">Project1</a></h2>
                   <p></p>
                 </div>
-                <div class="column" style="background-color:#bdc6ce;">
+                <div class="column" style="background-color:#fff;">
                   <h2><a href="">Project2</a</h2>
                   <p></p>
                 </div>
-                <div class="column" style="background-color:#bdc6ce;">
+                <div class="column" style="background-color:#fff;">
                   <h2><a href="">Project3</a</h2>
                   <p></p>
                 </div>
@@ -480,11 +470,11 @@ footer{
                 </div>
                </div>
              </div> 
-
-            <footer>
+ 
+              <footer>
                   <h4>Copyright © Tejas Ambhore</h4> 
                   <h4>Go Up</h4>
-            </footer>
+                  </footer>
 
       <script>
 /*Nav Bar*/
